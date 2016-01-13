@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="mainTemplate" template="/mainTemplate.jsp">
+		<put-attribute name="title" value="Ajout de l'Article" />
+		<put-attribute name="header" value="/header.jsp" />
+		<put-attribute name="menu" value="/menu.jsp" />
+		<put-attribute name="body" value="/body.jsp" />
+		<put-attribute name="footer" value="/footer.jsp" />
+	</definition>
+	<definition name="success" extends="mainTemplate">
+		<put-attribute name="title" value="Article ajouté avec succés" />
+	</definition>
+	<definition name="edit" extends="mainTemplate">
+		<put-attribute name="title" value="Modification de l'article" />
+		<put-attribute name="body" value="/edit.jsp" />
+	</definition>
+	<definition name="add" extends="mainTemplate">
+		<put-attribute name="title" value="Article Ajouté avec succés" />
+		<put-attribute name="body" value="/ajout.jsp" />
+	</definition>
+</tiles-definitions>
